@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue 3 Babel JSX 插件 | 小兔鲜儿</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/erabbit-client-pc-document/hero.png">
+    <meta name="description" content="小兔鲜儿PC前台-开发文档">
+    
+    <link rel="preload" href="/erabbit-client-pc-document/assets/css/0.styles.fcf294a2.css" as="style"><link rel="preload" href="/erabbit-client-pc-document/assets/js/app.89bf0df2.js" as="script"><link rel="preload" href="/erabbit-client-pc-document/assets/js/2.9c06a25d.js" as="script"><link rel="preload" href="/erabbit-client-pc-document/assets/js/19.a594d642.js" as="script"><link rel="prefetch" href="/erabbit-client-pc-document/assets/js/10.23f3a92a.js"><link rel="prefetch" href="/erabbit-client-pc-document/assets/js/11.cf97a071.js"><link rel="prefetch" href="/erabbit-client-pc-document/assets/js/12.f9a4116d.js"><link rel="prefetch" href="/erabbit-client-pc-document/assets/js/13.f58063eb.js"><link rel="prefetch" href="/erabbit-client-pc-document/assets/js/14.d227b963.js"><link rel="prefetch" href="/erabbit-client-pc-document/assets/js/15.88e2a02b.js"><link rel="prefetch" href="/erabbit-client-pc-document/assets/js/16.45accc32.js"><link rel="prefetch" href="/erabbit-client-pc-document/assets/js/17.0cb643a4.js"><link rel="prefetch" href="/erabbit-client-pc-document/assets/js/18.fa9f9a42.js"><link rel="prefetch" href="/erabbit-client-pc-document/assets/js/3.21cc2c59.js"><link rel="prefetch" href="/erabbit-client-pc-document/assets/js/4.896e02af.js"><link rel="prefetch" href="/erabbit-client-pc-document/assets/js/5.3b03a454.js"><link rel="prefetch" href="/erabbit-client-pc-document/assets/js/6.9b8cde68.js"><link rel="prefetch" href="/erabbit-client-pc-document/assets/js/7.121c8ae9.js"><link rel="prefetch" href="/erabbit-client-pc-document/assets/js/8.cfcf90da.js"><link rel="prefetch" href="/erabbit-client-pc-document/assets/js/9.a79a3e96.js">
+    <link rel="stylesheet" href="/erabbit-client-pc-document/assets/css/0.styles.fcf294a2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/erabbit-client-pc-document/" class="home-link router-link-active"><img src="/erabbit-client-pc-document/hero.png" alt="小兔鲜儿" class="logo"> <span class="site-name can-hide">小兔鲜儿</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/erabbit-client-pc-document/guide/00-vue3pre.html" class="nav-link">
+  vue3前置
+</a></div><div class="nav-item"><a href="/erabbit-client-pc-document/guide/01-intro.html" class="nav-link">
+  项目介绍
+</a></div><div class="nav-item"><a href="/erabbit-client-pc-document/guide/02-started.html" class="nav-link">
+  项目起步
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="功能模块" class="dropdown-title"><span class="title">功能模块</span> <span class="arrow down"></span></button> <button type="button" aria-label="功能模块" class="mobile-dropdown-title"><span class="title">功能模块</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/erabbit-client-pc-document/guide/03-home.html" class="nav-link">
+  首页模块
+</a></li><li class="dropdown-item"><!----> <a href="/erabbit-client-pc-document/guide/04-category.html" class="nav-link">
+  分类模块
+</a></li><li class="dropdown-item"><!----> <a href="/erabbit-client-pc-document/guide/05-detail.html" class="nav-link">
+  商品详情
+</a></li><li class="dropdown-item"><!----> <a href="/erabbit-client-pc-document/guide/06-login.html" class="nav-link">
+  登录模块
+</a></li><li class="dropdown-item"><!----> <a href="/erabbit-client-pc-document/guide/07-cart.html" class="nav-link">
+  购物车
+</a></li><li class="dropdown-item"><!----> <a href="/erabbit-client-pc-document/guide/08-pay.html" class="nav-link">
+  结算&amp;支付
+</a></li><li class="dropdown-item"><!----> <a href="/erabbit-client-pc-document/guide/09-member.html" class="nav-link">
+  个人中心
+</a></li></ul></div></div><div class="nav-item"><a href="/erabbit-client-pc-document/guide/10-end.html" class="nav-link">
+  项目总结
+</a></div> <a href="https://gitee.com/xmangojun/" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Gitee
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/erabbit-client-pc-document/guide/00-vue3pre.html" class="nav-link">
+  vue3前置
+</a></div><div class="nav-item"><a href="/erabbit-client-pc-document/guide/01-intro.html" class="nav-link">
+  项目介绍
+</a></div><div class="nav-item"><a href="/erabbit-client-pc-document/guide/02-started.html" class="nav-link">
+  项目起步
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="功能模块" class="dropdown-title"><span class="title">功能模块</span> <span class="arrow down"></span></button> <button type="button" aria-label="功能模块" class="mobile-dropdown-title"><span class="title">功能模块</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/erabbit-client-pc-document/guide/03-home.html" class="nav-link">
+  首页模块
+</a></li><li class="dropdown-item"><!----> <a href="/erabbit-client-pc-document/guide/04-category.html" class="nav-link">
+  分类模块
+</a></li><li class="dropdown-item"><!----> <a href="/erabbit-client-pc-document/guide/05-detail.html" class="nav-link">
+  商品详情
+</a></li><li class="dropdown-item"><!----> <a href="/erabbit-client-pc-document/guide/06-login.html" class="nav-link">
+  登录模块
+</a></li><li class="dropdown-item"><!----> <a href="/erabbit-client-pc-document/guide/07-cart.html" class="nav-link">
+  购物车
+</a></li><li class="dropdown-item"><!----> <a href="/erabbit-client-pc-document/guide/08-pay.html" class="nav-link">
+  结算&amp;支付
+</a></li><li class="dropdown-item"><!----> <a href="/erabbit-client-pc-document/guide/09-member.html" class="nav-link">
+  个人中心
+</a></li></ul></div></div><div class="nav-item"><a href="/erabbit-client-pc-document/guide/10-end.html" class="nav-link">
+  项目总结
+</a></div> <a href="https://gitee.com/xmangojun/" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Gitee
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vue 3 Babel JSX 插件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/erabbit-client-pc-document/guide/JSX.html#安装" class="sidebar-link">安装</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/erabbit-client-pc-document/guide/JSX.html#使用" class="sidebar-link">使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/erabbit-client-pc-document/guide/JSX.html#参数" class="sidebar-link">参数</a></li></ul></li><li><a href="/erabbit-client-pc-document/guide/JSX.html#表达式" class="sidebar-link">表达式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/erabbit-client-pc-document/guide/JSX.html#内容" class="sidebar-link">内容</a></li><li class="sidebar-sub-header"><a href="/erabbit-client-pc-document/guide/JSX.html#attributes-props" class="sidebar-link">Attributes / Props</a></li><li class="sidebar-sub-header"><a href="/erabbit-client-pc-document/guide/JSX.html#指令" class="sidebar-link">指令</a></li><li class="sidebar-sub-header"><a href="/erabbit-client-pc-document/guide/JSX.html#插槽" class="sidebar-link">插槽</a></li><li class="sidebar-sub-header"><a href="/erabbit-client-pc-document/guide/JSX.html#在-typesript-中使用" class="sidebar-link">在 TypeSript 中使用</a></li></ul></li><li><a href="/erabbit-client-pc-document/guide/JSX.html#谁在用" class="sidebar-link">谁在用</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/erabbit-client-pc-document/guide/JSX.html#兼容性" class="sidebar-link">兼容性</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue-3-babel-jsx-插件"><a href="#vue-3-babel-jsx-插件" class="header-anchor">#</a> Vue 3 Babel JSX 插件</h1> <p>以 JSX 的方式来编写 Vue 代码</p> <p>简体中文</p> <h2 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h2> <p>安装插件</p> <div class="language- extra-class"><pre class="language-text"><code>npm install @vue/babel-plugin-jsx -D
+</code></pre></div><p>配置 Babel</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;plugins&quot;: [&quot;@vue/babel-plugin-jsx&quot;]
+}
+</code></pre></div><h2 id="使用"><a href="#使用" class="header-anchor">#</a> 使用</h2> <h3 id="参数"><a href="#参数" class="header-anchor">#</a> 参数</h3> <h4 id="transformon"><a href="#transformon" class="header-anchor">#</a> transformOn</h4> <p>Type: <code>boolean</code></p> <p>Default: <code>false</code></p> <p>把 <code>on: { click: xx }</code> 转成 <code>onClick: xxx</code></p> <h4 id="optimize"><a href="#optimize" class="header-anchor">#</a> optimize</h4> <p>Type: <code>boolean</code></p> <p>Default: <code>false</code></p> <p>是否开启优化. 如果你对 Vue 3 不太熟悉，不建议打开</p> <h4 id="iscustomelement"><a href="#iscustomelement" class="header-anchor">#</a> isCustomElement</h4> <p>Type: <code>(tag: string) =&gt; boolean</code></p> <p>Default: <code>undefined</code></p> <p>自定义元素</p> <h4 id="mergeprops"><a href="#mergeprops" class="header-anchor">#</a> mergeProps</h4> <p>Type: <code>boolean</code></p> <p>Default: <code>true</code></p> <p>合并 class / style / onXXX handlers</p> <h4 id="enableobjectslots"><a href="#enableobjectslots" class="header-anchor">#</a> enableObjectSlots</h4> <p>使用 <code>enableObjectSlots</code> (文档下面会提到)。虽然在 JSX 中比较好使，但是会增加一些 <code>_isSlot</code> 的运行时条件判断，这会增加你的项目体积。即使你关闭了 <code>enableObjectSlots</code>，<code>v-slots</code> 还是可以使用</p> <h4 id="pragma"><a href="#pragma" class="header-anchor">#</a> pragma</h4> <p>Type: <code>string</code></p> <p>Default: <code>createVNode</code></p> <p>替换编译JSX表达式的时候使用的函数</p> <h2 id="表达式"><a href="#表达式" class="header-anchor">#</a> 表达式</h2> <h3 id="内容"><a href="#内容" class="header-anchor">#</a> 内容</h3> <p>函数式组件</p> <div class="language- extra-class"><pre class="language-text"><code>const App = () =&gt; &lt;div&gt;&lt;/div&gt;;
+</code></pre></div><p>在 render 中使用</p> <div class="language- extra-class"><pre class="language-text"><code>const App = {
+  render() {
+    return &lt;div&gt;Vue 3.0&lt;/div&gt;;
+  },
+};
+import { withModifiers, defineComponent } from &quot;vue&quot;;
+
+const App = defineComponent({
+  setup() {
+    const count = ref(0);
+
+    const inc = () =&gt; {
+      count.value++;
+    };
+
+    return () =&gt; (
+      &lt;div onClick={withModifiers(inc, [&quot;self&quot;])}&gt;{count.value}&lt;/div&gt;
+    );
+  },
+});
+</code></pre></div><p>Fragment</p> <div class="language- extra-class"><pre class="language-text"><code>const App = () =&gt; (
+  &lt;&gt;
+    &lt;span&gt;I'm&lt;/span&gt;
+    &lt;span&gt;Fragment&lt;/span&gt;
+  &lt;/&gt;
+);
+</code></pre></div><h3 id="attributes-props"><a href="#attributes-props" class="header-anchor">#</a> Attributes / Props</h3> <div class="language- extra-class"><pre class="language-text"><code>const App = () =&gt; &lt;input type=&quot;email&quot; /&gt;;
+</code></pre></div><p>动态绑定:</p> <div class="language- extra-class"><pre class="language-text"><code>const placeholderText = &quot;email&quot;;
+const App = () =&gt; &lt;input type=&quot;email&quot; placeholder={placeholderText} /&gt;;
+</code></pre></div><h3 id="指令"><a href="#指令" class="header-anchor">#</a> 指令</h3> <p>v-show</p> <div class="language- extra-class"><pre class="language-text"><code>const App = {
+  data() {
+    return { visible: true };
+  },
+  render() {
+    return &lt;input v-show={this.visible} /&gt;;
+  },
+};
+</code></pre></div><p>v-model</p> <blockquote><p>注意：如果想要使用 <code>arg</code>, 第二个参数需要为字符串</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>&lt;input v-model={val} /&gt;
+&lt;input v-model={[val, [&quot;modifier&quot;]]} /&gt;
+&lt;A v-model={[val, &quot;argument&quot;, [&quot;modifier&quot;]]} /&gt;
+</code></pre></div><p>会变编译成：</p> <div class="language- extra-class"><pre class="language-text"><code>h(A, {
+  argument: val,
+  argumentModifiers: {
+    modifier: true,
+  },
+  &quot;onUpdate:argument&quot;: ($event) =&gt; (val = $event),
+});
+</code></pre></div><p>v-models</p> <blockquote><p>注意: 你应该传递一个二维数组给 v-models。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>&lt;A v-models={[[foo], [bar, &quot;bar&quot;]]} /&gt;
+&lt;A
+  v-models={[
+    [foo, &quot;foo&quot;],
+    [bar, &quot;bar&quot;],
+  ]}
+/&gt;
+&lt;A
+  v-models={[
+    [foo, [&quot;modifier&quot;]],
+    [bar, &quot;bar&quot;, [&quot;modifier&quot;]],
+  ]}
+/&gt;
+</code></pre></div><p>会变编译成：</p> <div class="language- extra-class"><pre class="language-text"><code>h(A, {
+  modelValue: foo,
+  modelModifiers: {
+    modifier: true,
+  },
+  &quot;onUpdate:modelValue&quot;: ($event) =&gt; (foo = $event),
+  bar: bar,
+  barModifiers: {
+    modifier: true,
+  },
+  &quot;onUpdate:bar&quot;: ($event) =&gt; (bar = $event),
+});
+</code></pre></div><p>自定义指令</p> <div class="language- extra-class"><pre class="language-text"><code>const App = {
+  directives: { custom: customDirective },
+  setup() {
+    return () =&gt; &lt;a v-custom={[val, &quot;arg&quot;, [&quot;a&quot;, &quot;b&quot;]]} /&gt;;
+  },
+};
+</code></pre></div><h3 id="插槽"><a href="#插槽" class="header-anchor">#</a> 插槽</h3> <blockquote><p>注意: 在 <code>jsx</code> 中，应该使用 <strong><code>v-slots</code></strong> 代替 <em><code>v-slot</code></em></p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>const A = (props, { slots }) =&gt; (
+  &lt;&gt;
+    &lt;h1&gt;{ slots.default ? slots.default() : 'foo' }&lt;/h1&gt;
+    &lt;h2&gt;{ slots.bar?.() }&lt;/h2&gt;
+  &lt;/&gt;
+);
+
+const App = {
+  setup() {
+    const slots = {
+      bar: () =&gt; &lt;span&gt;B&lt;/span&gt;,
+    };
+    return () =&gt; (
+      &lt;A v-slots={slots}&gt;
+        &lt;div&gt;A&lt;/div&gt;
+      &lt;/A&gt;
+    );
+  },
+};
+
+// or
+
+const App = {
+  setup() {
+    const slots = {
+      default: () =&gt; &lt;div&gt;A&lt;/div&gt;,
+      bar: () =&gt; &lt;span&gt;B&lt;/span&gt;,
+    };
+    return () =&gt; &lt;A v-slots={slots} /&gt;;
+  },
+};
+
+// or
+const App = {
+  setup() {
+    return () =&gt; (
+      &lt;&gt;
+        &lt;A&gt;
+          {{
+            default: () =&gt; &lt;div&gt;A&lt;/div&gt;,
+            bar: () =&gt; &lt;span&gt;B&lt;/span&gt;,
+          }}
+        &lt;/A&gt;
+        &lt;B&gt;{() =&gt; &quot;foo&quot;}&lt;/B&gt;
+      &lt;/&gt;
+    );
+  },
+};
+</code></pre></div><h3 id="在-typesript-中使用"><a href="#在-typesript-中使用" class="header-anchor">#</a> 在 TypeSript 中使用</h3> <p><code>tsconfig.json</code>:</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;compilerOptions&quot;: {
+    &quot;jsx&quot;: &quot;preserve&quot;
+  }
+}
+</code></pre></div><h2 id="谁在用"><a href="#谁在用" class="header-anchor">#</a> 谁在用</h2> <table><thead><tr><th><a href="https://www.antdv.com/" target="_blank" rel="noopener noreferrer"><img src="docs/media/68747470733a2f2f716e2e616e7464762e636f6d2f6c6f676f2e706e67" alt="img"> <strong>Ant Design Vue</strong><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></th> <th><a href="https://youzan.github.io/vant/#/zh-CN/" target="_blank" rel="noopener noreferrer"><img src="docs/media/68747470733a2f2f696d672e797a63646e2e636e2f76616e742f6c6f676f2e706e67" alt="img"> <strong>Vant</strong><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></th> <th><a href="https://github.com/element-plus/element-plus" target="_blank" rel="noopener noreferrer"><img src="https://user-images.githubusercontent.com/10731096/91267529-259f3680-e7a6-11ea-9a60-3286f750de01.png" alt="img"> <strong>Element Plus</strong><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></th> <th><a href="https://github.com/leezng/vue-json-pretty" target="_blank" rel="noopener noreferrer"><img src="docs/media/logo.svg" alt="img"> <strong>Vue Json Pretty</strong><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></th></tr></thead> <tbody><tr><td></td> <td></td> <td></td> <td></td></tr></tbody></table> <h2 id="兼容性"><a href="#兼容性" class="header-anchor">#</a> 兼容性</h2> <p>要求：</p> <ul><li><strong>Babel 7+</strong></li> <li><strong>Vue 3+</strong></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/erabbit-client-pc-document/assets/js/app.89bf0df2.js" defer></script><script src="/erabbit-client-pc-document/assets/js/2.9c06a25d.js" defer></script><script src="/erabbit-client-pc-document/assets/js/19.a594d642.js" defer></script>
+  </body>
+</html>
